@@ -13,7 +13,6 @@ java {
     }
 }
 
-
 repositories {
     mavenCentral()
 }
@@ -22,11 +21,13 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    implementation 'org.springframework.boot:spring-boot-lombok'
-    implementation group: 'org.projectlombok', name: 'lombok', version: '1.18.42'
+
+    // REMOVIDA A LINHA INCORRETA: 'org.springframework.boot:spring-boot-lombok'
+
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
     runtimeOnly 'com.mysql:mysql-connector-j'
 
-    // Bootstrap (será usado via HTML, não precisa de dependência Java)
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
