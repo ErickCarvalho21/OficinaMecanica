@@ -1,4 +1,4 @@
-package br.com.projeto.oficina.Model;
+package br.com.projeto.oficina.business.controller;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +9,7 @@ import lombok.Setter;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Administrador {
+public class ControllerUsuario {
     private int idAdministrador;
     private String email;
     private String nome;
