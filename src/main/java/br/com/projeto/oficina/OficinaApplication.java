@@ -1,5 +1,6 @@
 package br.com.projeto.oficina;
 
+import br.com.projeto.oficina.Model.Administrador;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
