@@ -9,6 +9,7 @@ import lombok.Setter;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
+
 public class ControllerUsuario {
     private int idAdministrador;
     private String email;
